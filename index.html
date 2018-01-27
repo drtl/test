@@ -1,0 +1,34 @@
+
+
+<!doctype html>
+<html>
+<head>
+<script>
+function vali()
+{
+var u=document.forms["myform"]["user"].value;
+var p=document.forms["myform"]["pwd"].value;
+
+if(u == p)
+{
+alert("Welcome");
+window.location="sec.html";
+return false;
+}
+else
+{
+alert("Ple Try again!");
+return false;
+}
+}
+</script>
+</head>
+<body>
+<form method="post">
+<fiedlset style="width:"35px"><legend>Login Here</legend><input type="text" name="user" placeholder="Username" required>
+<br>
+<input type="Password" name="pwd" placeholder="Password" required>
+<br>
+<input type="submit" name="submit" value="submit" onclick="return vali()">
+</form></fieldset></html>
+
