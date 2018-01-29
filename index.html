@@ -4,19 +4,14 @@
 <html>
 <head>
 <script>
-function vali()
-{
+function validate(){
 var u = document.getElementById("user").value;
 var p = document.getElementById("pwd").value;
-
-if(u == p)
-{
+if(u == p){
 alert("Welcome");
 window.location.href="sec.html";
 return false;
-}
-else
-{
+}else{
 alert("Please Try again!");
 return false;
 }
@@ -29,6 +24,6 @@ return false;
 <br>
 <input type="Password" name="pwd" id="pwd" placeholder="Password" required>
 <br>
-<input type="submit" name="submit" value="submit" onclick="return vali()">
+<input type="submit" name="submit" value="submit" onclick="return validate()">
 </form></fieldset></html>
 
