@@ -6,8 +6,8 @@
 <script>
 function vali()
 {
-var u=document.forms["myform"]["user"].value;
-var p=document.forms["myform"]["pwd"].value;
+var u = document.getElementById("user").value;
+var p = document.fgetElementById("pwd").value;
 
 if(u == p)
 {
@@ -25,9 +25,9 @@ return false;
 </head>
 <body>
 <form method="post">
-<fiedlset style="width:"35px"><legend>Login Here</legend><input type="text" name="user" placeholder="Username" required>
+<fiedlset style="width:"35px"><legend>Login Here</legend><input type="text" name="user" id="user" placeholder="Username" required>
 <br>
-<input type="Password" name="pwd" placeholder="Password" required>
+<input type="Password" name="pwd" id="pwd" placeholder="Password" required>
 <br>
 <input type="submit" name="submit" value="submit" onclick="return vali()">
 </form></fieldset></html>
